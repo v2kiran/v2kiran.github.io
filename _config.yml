@@ -16,11 +16,11 @@ post-images: "/images/post-images"
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 #minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "blog.v2kiran.com12"
+title                    : "blog.v2kiran.com"
 title_separator          : "-"
 #subtitle                 : "All things tech"
 name                     : "Kiran Reddy"
@@ -48,14 +48,16 @@ comments:
     theme                : # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
   giscus:
-    repo_id              : "v2kiran/v2kiran.github.io" # Shown during giscus setup at https://giscus.app
-    category_name        : "Post Comments" # Full text name of the category
-    category_id          : "DIC_kwDOJUcTic4CVpKX" # Shown during giscus setup at https://giscus.app
+    repo_id              : "R_kgDOJUcTiQ" # Shown during giscus setup at https://giscus.app
+    #category_name        : "Post Comments" # Full text name of the category
+    category_name: "Announcements"
+    #category_id          : "DIC_kwDOJUcTic4CVpKX" # Shown during giscus setup at https://giscus.app
+    category_id: "DIC_kwDOJUcTic4CVpJZ"
     discussion_term      : # "pathname" (default), "url", "title", "og:title"
     reactions_enabled    : # '1' for enabled (default), '0' for disabled
     theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
   staticman:
-    branch               : # "master"
+    branch               : # "main"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
 reCaptcha:
   siteKey                :
@@ -109,9 +111,9 @@ analytics:
 # Site Author
 author:
   name             : "Kiran Reddy"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  avatar           : "https://s.gravatar.com/avatar/1ae2e91992ae82349d5bae973e89db23?s=80" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "All things tech"
+  location         : "India (Bangalore)"
   email            :
   links:
     - label: "Email"
@@ -217,7 +219,8 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+#permalink: /:categories/:title/
+permalink: "articles/:year/:month/:day/:title/"
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -291,6 +294,13 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
