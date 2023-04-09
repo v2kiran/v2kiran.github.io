@@ -17,84 +17,101 @@ My projects are spread over several GitHub accounts:
 * [Clojure Emacs](https://github.com/clojure-emacs)
 * [nREPL](https://github.com/nrepl)
 
-## Highlights
 
-Here's a brief run-down of my (somewhat) popular projects.[^1]
 
-### Ruby
+## Tables
 
-* [RuboCop](http://rubocop.org) (linter/code formatter for Ruby)
-* [Ruby Style Guide](https://github.com/rubocop/ruby-style-guide)
-* [Rails Style Guide](https://github.com/rubocop/rails-style-guide)
-* [RSpec Style Guide](https://github.com/rubocop/rspec-style-guide)
-* [Minitest Style Guide](https://github.com/rubocop/minitest-style-guide)
+| Github         | PSGallery |        Description                                                      |
+| --------         | ------ | ------------------------------------------------------------ |
+| [PSAlphaFS](https://github.com/v2kiran/PSAlphaFS){: .btn .btn--primary}    | [PSgallery](https://www.powershellgallery.com/packages/PSAlphaFS/2.0.0.1){: .btn .btn--info}     | PSAlphaFS is a wrapper for the ALphaFS .NET library, providing a small subset of functions that overcome the MAX_PATH limitation of 260 characters of the windows filesystem. <p>This module is intended to work on windows alone because Linux and Unix systems do not have the 260 character length limitation.</p> **Note:** PowerShell Version 7 supports long paths natively so if you have PS v7 installed you do not need this module. [Primary Button](#){: .btn .btn--primary}           |
+| [Jane Doe](#)    | $100K  | For all the blogging she does.                               |
+| [Fred Bloggs](#) | $100M  | Pictures are worth a thousand words, right? So Jane × 1,000. |
+| [Jane Bloggs](#) | $100B  | With hair like that?! Enough said.                           |
 
-### Clojure
 
-These days (circa 2018) Clojure free software work consumes most of my
-time and energy.
-
-I'm the author of a few projects:
-
-* [CIDER](https://cider.mx) (powerful Clojure interactive development environment for Emacs)
-* [cider-nrepl](https://github.com/clojure-emacs/cider-nrepl) (nREPL middleware for Clojure editors and IDEs)
-* [orchard](https://github.com/clojure-emacs/orchard) (essential functionality for Clojure development tools, used internally by `cider-nrepl`)
-* [incomplete](https://github.com/nrepl/incomplete) (a simple Clojure code completion library)
-* [inf-clojure](https://github.com/clojure-emacs/inf-clojure) (basic Clojure interactive development environment for Emacs)
-
-And the primary maintainer or a co-maintainer of a ton of commonly
-used tools and libraries focused at creating powerful Clojure editing
-experience:
-
-* [nREPL](https://nrepl.xyz) (a network REPL server)
-* [Piggieback](https://github.com/nrepl/piggieback) (ClojureScript support for nREPL)
-* [Drawbridge](https://github.com/nrepl/drawbridge) (HTTP support for nREPL)
-* [Fastlane](https://github.com/nrepl/fastlane) (Transit support for nREPL)
-* [cljs-tooling](https://github.com/clojure-emacs/cljs-tooling)
-* [clj-refactor](https://github.com/clojure-emacs/clj-refactor)
-* [refactor-nrepl](https://github.com/clojure-emacs/refactor-nrepl)
-* [compliment](https://github.com/alexander-yakushev/compliment/) (the ultimate Clojure code completion library)
-* [sayid](https://github.com/clojure-emacs/sayid) (Clojure tracer/debugger)
-* [clojuredocs-edn-export](https://clojuredocs-edn.netlify.app/) (daily EDN exports of the data from <https://clojuredocs.org>)
-* [parseclj](https://github.com/clojure-emacs/parseclj) (Clojure parser written in Emacs Lisp)
-* [parseedn](https://github.com/clojure-emacs/parseedn) (EDN parser written in Emacs Lisp)
-
-### Emacs
-
-Emacs is the One True Editor and my biggest life-long obsession. You can safely describe
-me as an unreasonable (but powerful) Emacs wielding fanatic!
-
-* [Prelude](https://github.com/bbatsov/prelude) (an Emacs distribution)
-* [Projectile](https://projectile.mx) (project management and navigation package)
-* [Crux](https://github.com/bbatsov/crux) (a collection of useful Emacs commands)
-* [super-save](https://github.com/bbatsov/super-save) (auto-save your work when moving around)
-* [guru-mode](https://github.com/bbatsov/guru-mode) (helps you remember the basic Emacs keybindings)
-* [rubocop-emacs](https://github.com/bbatsov/rubocop-emacs)
-* [Zenburn theme for Emacs](https://github.com/bbatsov/zenburn-emacs)
-* [Solarized theme for Emacs](https://github.com/bbatsov/solarized-emacs)
-* [adoc-mode](https://github.com/emacsorphanage/adoc-mode)
-* [Flycheck](https://github.com/flycheck/flycheck)
-* [Flycheck OCaml](https://github.com/flycheck/flycheck-ocaml)
-
-You can find my personal Emacs configuration [here](https://github.com/bbatsov/emacs.d/).
-
-## Meta Redux
-
-Since 2018 I have a dedicated blog, named [Meta Redux](https://metaredux.com), for my OSS work.
-
-## Support Me
-
-Working on free software projects is a lot of fun, but it also takes a
-lot of time and energy. I'd love to be able to turn my free software
-hobby work into my job, but I'll need a lot of help from you to get
-there!
-
-If you like my work, consider supporting it via one of following funding platforms:
-
-* [GitHub Sponsors](https://github.com/users/bbatsov/sponsorship)
-* [Patreon](https://www.patreon.com/bbatsov)
-* [PayPal](https://www.paypal.me/bbatsov)
-
-Thanks!
-
-[^1]: Popular meaning that they have other users besides me.
+<h2>Open Source</h2>
+<dl class="row">
+    <dt class="col-sm-3">PSAlphaFS</dt>
+    <dd class="col-sm-9">
+        <p>PSAlphaFS is a wrapper for the <a id="anchorid" href="https://alphafs.alphaleonis.com/">ALphaFS .NET library</a>, providing a small subset of functions
+            that overcome the <a id="anchorid" href="https://docs.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=cmd">MAX_PATH limitation of 260 characters</a> of the windows filesystem.
+        </p>
+        <p>
+            This module is intended to work on windows alone because Linux and Unix systems do not have the 260
+            character length limitation.
+        </p>
+        <p>
+            <strong>Note: </strong>PowerShell Version 7 supports long paths natively so if you have PS v7
+            installed you do not need this module.
+        </p>
+        <p>
+            <a type="button" class="btn btn-secondary" style="background-color:#485fc7" href="https://github.com/v2kiran/PSAlphaFS">
+                <span>
+                    <i class="fab fa-github" style="color:#fff"></i>
+                </span>
+                <span style="color:white;">GitHub</span>
+            </a>
+            <a className="button is-primary" href="https://www.powershellgallery.com/packages/PSAlphaFS/2.0.0.1">
+            <span>
+              <i class="fas fa-terminal"></i>
+            </span>
+            <span>PSGallery</span>
+          </a>
+        </p>
+    </dd>
+    <dt class="col-sm-3">PSLiteDB</dt>
+    <dd class="col-sm-9">
+        <p>   PSLiteDB is a PowerShell wrapper for LiteDB which is a
+              <a id="anchorid" href="https://en.wikipedia.org/wiki/NoSQL">noSQL</a> singlefile datastore just like <a id="anchorid" href="https://www.sqlite.org/index.html">SQLite</a>.
+              PSLiteDB has been compiled against the <a id="anchorid" href="https://docs.microsoft.com/en-us/dotnet/standard/net-standard">.NET Standard 2</a> which means
+              you can use this module on windows with both Windows PowerShell 5 and above
+              and PowerShell 7 or above on linux.
+        <p>
+              The advantage of using a nosql database is that you do not need to
+              create tables with any particular schema. Columns in tables can be
+              added or removed on the fly.
+        <p>
+            <a type="button" class="btn btn-secondary" style="background-color:#485fc7" href="https://github.com/v2kiran/PSLiteDB">
+                <span>
+                    <i class="fab fa-github" style="color:#fff"></i>
+                </span>
+                <span style="color:white;">GitHub</span>
+            </a>
+            <a className="button is-primary" href="https://www.powershellgallery.com/packages/PSLiteDB/2.1.0">
+            <span>
+              <i class="fas fa-terminal"></i>
+            </span>
+            <span>PSGallery</span>
+          </a>
+        </p>
+    </dd>
+    <dt class="col-sm-3">PSSecret</dt>
+    <dd class="col-sm-9">
+        <p> PSSecret acts as your personal secure vault where you can
+            <strong>
+              encrypt, store & retrive data securely from the registry.
+            </strong>
+            You can store the following types of information :
+            Strings,Credentials,Hashtables,Objects.
+        <p>
+              PSSecret uses the <a id="anchorid" href="https://en.wikipedia.org/wiki/Cryptographic_Message_Syntax">Crytographic Message Syntax</a>
+              introduced in PowerShell V5 which use the
+              <a id="anchorid" href="https://en.wikipedia.org/wiki/Public_key_infrastructure">public key infrastructure PKI</a>
+              to encrypt data. The encrypted data cannot be decrypted by any other
+              user on any other computer than the one where it was encrypted.
+        <p>
+            <a type="button" class="btn btn-secondary" style="background-color:#485fc7" href="https://github.com/v2kiran/PSSecret">
+                <span>
+                    <i class="fab fa-github" style="color:#fff"></i>
+                </span>
+                <span style="color:white;">GitHub</span>
+            </a>
+            <a class="btn--info" href="https://www.powershellgallery.com/packages/PSSecret/1.0.0">
+            <span>
+              <i class="fas fa-terminal"></i>
+            </span>
+            <span>PSGallery</span>
+          </a>
+        </p>
+    </dd>
+</dl>
